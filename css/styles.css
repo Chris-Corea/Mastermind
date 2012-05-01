@@ -1,0 +1,37 @@
+h2 
+	 {
+		color:green;
+  	font-size:24pt;
+  	font-style:bold;
+  	font-style:italic;
+   }
+h3 
+	 {
+		color:blue;
+  	font-size:16pt;
+  	font-style:bold;
+	 }
+red_s
+	 {
+		color:#FF0000;
+	 }	
+green_s
+	 {
+	 	color:#00CC33;
+	 }
+blue_s
+	 {
+	 	color:#0000FF;
+	 }
+purple_s
+	 {
+	 	color:#CC00FF;
+	 }
+orange_s
+	 {
+	 	color:#FF6633;
+	 }
+yellow_s
+	 {
+	 	color:#FFFF00;
+	 }
