@@ -1,0 +1,9 @@
+One of the first projects I ever completed as a computer science student. 
+
+This initial import will contain the original code as it was completed and submitted
+for my class. I will be doing a lot of refactoring as I find some free time to work
+on this. 
+
+mastermind.py contains a working commandline implementation of the game. The other files 
+are for a webapp that uses Google's AppEngine. 
+

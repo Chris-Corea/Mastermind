@@ -1,0 +1,104 @@
+<html>
+<STYLE TYPE="text/css">
+<!--
+H2
+  {color:green;
+  font-size:24pt;
+  font-style:bold;
+  font-style:italic;
+  }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+H3
+  {color:blue;
+  font-size:16pt;
+  font-style:bold;
+  }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+STRONG
+  {color:red
+  }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+WEAK
+  {color:green
+  }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+WORD
+  {color:blue
+  }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+CHAIR
+  {color:purple
+  }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+LEG
+  {color:ORANGE
+  }
+-->
+</STYLE>
+<STYLE TYPE="text/css">
+<!--
+ABE
+  {color:yellow
+  }
+-->
+</STYLE>
+<body style="background: #ADDFFF">
+  <body>
+    <h2><U>Mastermind</U></h2>
+    <h3>Enter the colors</h3>
+     <br>
+     Welcome: {{Welcome}} <br>
+<a href="/scoreIt">Scores</a>
+<br>
+    <form action="/on_guess" method="get">
+      Color 1:<input type=radio name="color1" value="red"><STRONG>Red</STRONG> <input type=radio name="color1" value="green"><WEAK>Green</WEAK> <input type=radio name="color1" value="blue"><WORD>Blue</WORD> <input type=radio name="color1" value="purple"><CHAIR>Purple</CHAIR> <input type=radio name="color1" value="orange"><LEG>Orange</LEG> <input type=radio name="color1" value="yellow"><ABE>Yellow</ABE><br>
+
+      Color 2:<input type=radio name="color2" value="red"><STRONG>Red</STRONG> <input type=radio name="color2" value="green"><WEAK>Green</WEAK> <input type=radio name="color2" value="blue"><WORD>Blue</WORD> <input type=radio name="color2" value="purple"><CHAIR>Purple</CHAIR> <input type=radio name="color2" value="orange"><LEG>Orange</LEG> <input type=radio name="color2" value="yellow"><ABE>Yellow</ABE><br>
+
+      Color 3:<input type=radio name="color3" value="red"><STRONG>Red</STRONG> <input type=radio name="color3" value="green"><WEAK>Green</WEAK> <input type=radio name="color3" value="blue"><WORD>Blue</WORD> <input type=radio name="color3" value="purple"><CHAIR>Purple</CHAIR> <input type=radio name="color3" value="orange"><LEG>Orange</LEG> <input type=radio name="color3" value="yellow"><ABE>Yellow</ABE><br>
+
+      Color 4:<input type=radio name="color4" value="red"><STRONG>Red</STRONG> <input type=radio name="color4" value="green"><WEAK>Green</WEAK> <input type=radio name="color4" value="blue"><WORD>Blue</WORD> <input type=radio name="color4" value="purple"><CHAIR>Purple</CHAIR> <input type=radio name="color4" value="orange"><LEG>Orange</LEG> <input type=radio name="color4" value="yellow"><ABE>Yellow</ABE><br>
+
+      <input type="submit" value="Guess"></div>
+    </form>
+
+    Guess: {{guess}} <br>
+    
+    Exacts: {{exacts}} <br>
+    Partials: {{partials}} <br>
+	</br>
+    {% for guessList in guessFeedBackList %}
+	{{guessList}}<br>
+    {% endfor %}
+
+	
+</br>
+<br>
+Message: {{message}}<br>
+<br>
+<br>
+<br>
+<br>    
+<a href=/newgame>Start a New Game</a>
+<br>
+<a href={{logout}}>Logout Here</a>
+  </body>
+</html>
