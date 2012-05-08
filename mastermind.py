@@ -4,7 +4,7 @@
 # Commandline implementation of Mastermind
 
 from google.appengine.ext import db
-import random
+from random import randint
 def printInstructions():
 	print "\n\nThis is a game of wits and luck! " \
           "Try to guess the right colors! \n" \
@@ -25,15 +25,8 @@ class Scores(db.Model):
 	name = db.StringProperty()
 
 def generateSecret():
-	colors = getColors()
-	secret = []
-	i = 0
-	while i < 4:
-		number = random.randint(0,5)
-		color = colors[number]
-		secret.append(color)
-		i += 1
-	return secret
+  colors = getColors()
+  return [colors[randint(0,5)] for x in xrange(4)]
 
 def getGuess():
 	colors = getColors()
